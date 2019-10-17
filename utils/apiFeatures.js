@@ -8,14 +8,14 @@ class APIFeatures {
    /*  if(!this.queryString)
       return; */
     const queryObj = { ...this.queryString };
-    console.log(queryObj);
+   // console.log(queryObj);
     const excludedFields = ['page', 'sort', 'limit', 'fields'];
     excludedFields.forEach(el => delete queryObj[el]);
-    console.log('after exluding fields',queryObj);
+  //  console.log('after exluding fields',queryObj);
     // 1B) Advanced filtering
     let queryStr = JSON.stringify(queryObj);
     queryStr = queryStr.replace(/\b(gte|gt|lte|lt|neq|in)\b/g, match => `$${match}`);
-    console.log(queryStr);
+  //  console.log(queryStr);
     this.query = this.query.find(JSON.parse(queryStr));
     return this;
   }

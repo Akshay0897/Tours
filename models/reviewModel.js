@@ -79,7 +79,7 @@ const reviewSchema = new mongoose.Schema(
 
     reviewSchema.post(/^findOneAnd/,function(doc){
       //this.findOne() does not work here cause it's post middleware
-      console.log('after changing review',doc);
+     // console.log('after changing review',doc);
       doc.constructor.calcAverageRatings(doc.tour);
     })
 
