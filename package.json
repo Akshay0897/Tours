@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js",
     "starts": "nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js"
@@ -43,5 +44,8 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "prettier": "^1.18.2"
   },
-  "description": ""
+  "description": "",
+  "engines":{
+    "node":">=10.0.0"
+  }
 }
