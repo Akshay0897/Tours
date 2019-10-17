@@ -27,7 +27,7 @@ mongoose
   .then(() => console.log('connection initiated sucessfully with mongodb'))
   .catch(() => console.log('connection failed to mongodb'));
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`server is listening  at port ${port}`);
 });
 
