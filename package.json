@@ -32,7 +32,7 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
-    "acorn": "^7.0.0",
+    "acorn": "^7.1.1",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.3.0",
